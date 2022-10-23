@@ -1,0 +1,2 @@
+class Visual < ApplicationRecord
+end
