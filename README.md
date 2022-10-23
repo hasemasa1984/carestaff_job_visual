@@ -10,4 +10,13 @@
 | encrypted_password | string | null: false |
 
 
+## visualテーブル
+
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| name               | string | null: false |
+| staff_code              | integer | null: false |
+| datetime               |  datetime   | null: false |
+
+
 
