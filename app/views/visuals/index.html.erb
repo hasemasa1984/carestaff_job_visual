@@ -1,0 +1,16 @@
+<h1>業務一覧</h1>
+<%= link_to "業務開始", "#", class:"post" %>
+
+<% @articles.each do |visual| %>
+  <div class="visual">
+    <div class="visual-job">
+      <%= visual.job_id %>
+    </div>
+   
+    </div>
+    <div class="visual-datetime">
+      <%= visual.datetime %>
+    </div>
+  </div>
+<% end %
+
