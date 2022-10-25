@@ -1,19 +1,96 @@
 h1{
   text-align: center;
+  font-size: 50px;
 }
 
 .post{
   display: block;
-  width: 150px;
-  padding: 10px;
+  width: 300px;
+  height: 100px;
+  padding: 5px;
   border: 1px solid white;
   background-color: purple;
-  color: white;
+  color: whitesmoke;
+  font-size: 50px;
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+.header {
+  background-color: white;
+  margin-bottom: 100px;
+  padding: 20px 0;
+
+
+}
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 6.0em;
+  height: 150px;
+  color: purple;
+  text-decoration: none;
+  user-select: none;
+  border: 1px purple solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.nav__btn:hover{
+  color: #fff;
+  background: purple;
+}
+
+
+
+/* フォーム周り */
+.form__wrapper{
+  min-height: calc(100vh - 161px);
+}
+
+.form__text {
+  width: 80%;
+}
+
+.field{
+  margin: 10px 0;
+}
+
+.actions{
+  margin-bottom: 40px;
+}
+
+.form__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #87CEFA;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+}
+
+.form__btn:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+
 
 .visual{
   height:200px;

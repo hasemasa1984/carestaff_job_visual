@@ -1,5 +1,10 @@
 <h1>スタッフ業務見える化</h1>
-<%= link_to "業務開始", "#", class:"post" %>
+<% if user_signed_in? %>
+<div class="greeting">
+<%= link_to "業務開始",  "#", class:"post"%>
+      
+</div>     
+<% end %>
 
 <% @visuals.each do |visual| %>
   <div class="visual">
