@@ -1,7 +1,7 @@
-<h1>業務一覧</h1>
+<h1>スタッフ業務見える化</h1>
 <%= link_to "業務開始", "#", class:"post" %>
 
-<% @articles.each do |visual| %>
+<% @visuals.each do |visual| %>
   <div class="visual">
     <div class="visual-job">
       <%= visual.job_id %>
@@ -12,5 +12,5 @@
       <%= visual.datetime %>
     </div>
   </div>
-<% end %
+<% end %>
 
