@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'active_hash'
 gem 'pry-rails'
 gem 'devise'
+gem 'net-imap'
+gem 'net-pop'
+gem 'net-smtp'
