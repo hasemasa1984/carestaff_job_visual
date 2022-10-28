@@ -1,4 +1,4 @@
-class Genre < ActiveHash::Base
+class Job < ActiveHash::Base
   self.data = [
     { id: 1, name: '---' },
     { id: 2, name: '排泄介助' },
@@ -14,4 +14,4 @@ class Genre < ActiveHash::Base
 
   include ActiveHash::Associations
   has_many :visuals
-  end
+end
