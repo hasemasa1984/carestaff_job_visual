@@ -4,5 +4,21 @@ class VisualsController < ApplicationController
   end
 
   def new
+    @Visual = Visual.new
+  end
+
+  def create
+    @Visual = Visual.new(visual_params) 
+    if  @Visual.save
+      redirect_to root_path
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def visual_params
+    params.require(:Visual).permit(:name,:staff_code).merge(user_id: current_user.id)
   end
 end
