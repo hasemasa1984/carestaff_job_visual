@@ -58,3 +58,7 @@ gem 'devise'
 gem 'net-imap'
 gem 'net-pop'
 gem 'net-smtp'
+
+group :production do
+  gem 'pg'
+end
