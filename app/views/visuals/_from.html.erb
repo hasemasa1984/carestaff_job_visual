@@ -1,0 +1,22 @@
+<%= form_with model: visual, local: true do |f|%>
+  <div class="field">
+    <%= f.label :name, "スタッフ名" %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :staff_code, "スタッフコード" %><br />
+    <%= f.text_area :staff_code, class: :form__text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :job_id, "介護業務実績" %><br />
+    <%= f.text_area :job_id, class: :form__text %>
+  </div>
+
+  
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
