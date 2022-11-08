@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card__body">
+    <%= link_to visual.title, visual_path(visual), class: :card__title%>
+    <p class="card__summary">
+      <%= visual. %>
+    </p>
+    <%= link_to "by #{visual.user.name}", user_path(visual.user), class: :card__user %>
+  </div>
+</div>

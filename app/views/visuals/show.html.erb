@@ -1,0 +1,51 @@
+<main class="main">
+  <div class="inner">
+    <div class="prototype__wrapper">
+      <p class="prototype__hedding">
+        <%= @visual.title %>
+      </p>
+      <%= link_to "by #{@visual.user.name}", user_path(@visual.user), class: :visual__user %>
+      <% if current_user == @visual.user%>
+        <div class="visual__manage">
+          <%= link_to "編集する", edit_visual_path(@visual), class: :visual__btn %>
+          <%= link_to "削除する", visual_path(@visual), method: :delete, class: :visual__btn %>
+        </div>
+      <% end %>
+      <div class="visual__body">
+        <div class="visual__detail">
+          <p class="detail__title">業務結果</p>
+          <p class="detail__message">
+            <%= @visual. %>
+          </p>
+        </div>
+        <div class="visual__detail">
+          <p class="detail__title">業務内容</p>
+          <p class="detail__message">
+            <%= @visual. %>
+          </p>
+        </div>
+      </div>
+      <div class="prototype__comments">
+        <% if user_signed_in? %>
+          <%= form_with model: [@visual, @comment], local: true do |f|%>
+            <div class="field">
+              <%= f.label :content, "コメント" %><br />
+              <%= f.text_field :content, id:"comment_content" %>
+            </div>
+            <div class="actions">
+              <%= f.submit "送信する", class: :form__btn  %>
+            </div>
+          <% end %>
+        <% end %>
+        <ul class="comments_lists">
+          <% @comments.each do |comment| %>
+            <li class="comments_list">
+              <%= comment.content%>
+              <%= link_to "（#{comment.user.name}）", user_path(comment.user), class: :comment_user %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
