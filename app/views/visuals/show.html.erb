@@ -2,9 +2,9 @@
   <div class="inner">
     <div class="prototype__wrapper">
       <p class="prototype__hedding">
-        <%= @visual.title %>
+        <%#= @visual.title %>
       </p>
-      <%= link_to "by #{@visual.user.name}", user_path(@visual.user), class: :visual__user %>
+      <%= link_to "by #{@visual.user.name}", visual_path(@visual.user), class: :visual__user %>
       <% if current_user == @visual.user%>
         <div class="visual__manage">
           <%= link_to "編集する", edit_visual_path(@visual), class: :visual__btn %>
@@ -15,13 +15,13 @@
         <div class="visual__detail">
           <p class="detail__title">業務結果</p>
           <p class="detail__message">
-            <%= @visual. %>
+            <%= @visual.visual_id %>
           </p>
         </div>
         <div class="visual__detail">
           <p class="detail__title">業務内容</p>
           <p class="detail__message">
-            <%= @visual. %>
+            <%= @visual.datetime %>
           </p>
         </div>
       </div>

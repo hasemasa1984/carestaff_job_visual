@@ -16,6 +16,9 @@ class VisualsController < ApplicationController
     end
   end
 
+  def show
+  end
+
   private
 
   def visual_params

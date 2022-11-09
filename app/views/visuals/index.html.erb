@@ -1,7 +1,7 @@
 <h1>スタッフ業務見える化</h1>
 <% if user_signed_in? %>
 <div class="greeting">
-<%= link_to "業務開始",  "#", class:"post"%>
+<%= link_to "業務開始",  visual_path(current_user), class:"post"%>
       
 </div>     
 <% end %>
