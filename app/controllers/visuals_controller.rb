@@ -17,6 +17,8 @@ class VisualsController < ApplicationController
   end
 
   def show
+    @Visual = Visual.new
+    @Visual = User.name
   end
 
   def edit
