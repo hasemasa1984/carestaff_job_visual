@@ -23,7 +23,6 @@ class VisualsController < ApplicationController
     else
       render :new
     end
-    #@Visual = User.name
   end
 
   def edit
