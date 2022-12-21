@@ -18,7 +18,12 @@ class VisualsController < ApplicationController
 
   def show
     @Visual = Visual.new
-    @Visual = User.name
+    if  @Visual.save
+      redirect_to root_path
+    else
+      render :new
+    end
+    #@Visual = User.name
   end
 
   def edit
